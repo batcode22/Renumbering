@@ -17,7 +17,7 @@ install:
   - pip install codecov
 script: 
 #  - python -m pytest 
-  - py.test -v --cov=code
+  - py.test -v --cov
   
 
 after_success:
