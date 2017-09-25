@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/batcode22/Renumbering.svg?branch=master)](https://travis-ci.org/batcode22/Renumbering)
+[![codecov](https://codecov.io/gh/batcode22/Renumbering/branch/master/graph/badge.svg)](https://codecov.io/gh/batcode22/Renumbering)
 # Renumbering
 Python module for renumber molecules having same main structural framework with same number 
 
