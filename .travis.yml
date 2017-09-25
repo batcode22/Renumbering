@@ -13,8 +13,9 @@ install:
   - pip install pytest pytest-cov
   - pip install numpy
   - pip install scipy
-  - python setup.py install
+# - python setup.py install
   - pip install codecov
+  - pip install -e .
 script: 
 #  - python -m pytest
    - py.test -v cov=./
