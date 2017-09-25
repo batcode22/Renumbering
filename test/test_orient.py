@@ -1,6 +1,7 @@
 """
 test for orient
 """
+import sys,os
 import code
 from code import orient
 import numpy as np
