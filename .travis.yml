@@ -17,8 +17,10 @@ install:
   - pip install codecov
   - pip install -e .
 script: 
-#  - python -m pytest
-   - py.test -v cov=./
+  - python -m pytest
+  - coverage run --source ./ -m py.test
+
+#   - py.test -v cov=./
 
 notifications:
     email: false
