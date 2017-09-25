@@ -3,30 +3,8 @@
 
 language: python
 
-# Run jobs on container-based infrastructure, can be overridden per job
-sudo: false
-
-matrix:
-    - python: 2.7
-
-before_install:
-  - uname -a
-  - free -m
-  - df -h
-  - ulimit -a
+python:
+    - 2.7
 
 install:
-  - hash -r
-
-before_script:
-  - python -V
-
-script:
   - pip install -e .
-  - py.test -v --cov=./
-
-after_success:
-  - codecov
-
-notifications:
-  email: false
