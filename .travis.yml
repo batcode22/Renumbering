@@ -10,4 +10,4 @@ install:
   - pip install scipy
   - pip install -e .
 script: 
-  - nosetests
+  - py.test
