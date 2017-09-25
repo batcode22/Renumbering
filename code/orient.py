@@ -162,6 +162,7 @@ def orientation(filename):             #function orientation will reorient the i
 natom_ref, atom_type_ref, xcoordinate_ref, ycoordinate_ref, zcoordinate_ref, dist_ref = orientation(file_ref)    #reference file
 natom_2, atom_type_2, xcoordinate_2, ycoordinate_2, zcoordinate_2, dist_2 = orientation(file_2)                  #file to be renumbered. Should have larger or same number of atoms than reference file
 
+"""
 #Now the renumbering begins :)
 
 X = [[0 for i in range(natom_2)] for j in range(natom_2)]    #2D matrices of dimension natom_2 X natom_2   given natom_2 > natom_ref
@@ -216,4 +217,4 @@ for a in range(0,natom_2):
 for a in range(0,natom_2):
 	print new_order[a],xnew[a],ynew[a],znew[a] #atom_type_ref[a]
 	#print prev_index[a]
-
+"""
