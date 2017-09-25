@@ -16,7 +16,8 @@ install:
   - python setup.py install
   - pip install codecov
 script: 
-  - python -m pytest -v cov
+#  - python -m pytest
+   - py.test -v cov=./
 
 notifications:
     email: false
