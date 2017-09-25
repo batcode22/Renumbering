@@ -7,7 +7,7 @@ python:
     - 2.7
 
 install:
-  - pip install scipy.optimize
+  - pip install scipy
   - pip install -e .
 script: 
   - nosetests
