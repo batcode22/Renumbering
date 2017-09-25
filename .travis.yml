@@ -8,12 +8,17 @@ python:
 #before_script:
 #  - export PYTHONPATH=$PYTHONPATH:$(pwd)
 
-install:
+install: 
+  - pip install --upgrade pip setuptools
+  - pip install pytest pytest-cov
+  - pip install numpy
   - pip install scipy
   - python setup.py install
   - pip install codecov
 script: 
-  - python -m pytest 
+#  - python -m pytest 
+  - py.test -v --cov=./
+  
 
 after_success:
   - codecov
