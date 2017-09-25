@@ -11,7 +11,7 @@ python:
 install:
   - pip install scipy
   - python setup.py install
-  - pip install --user codecov
+  - pip install codecov
 script: 
   - python -m pytest 
 
