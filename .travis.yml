@@ -16,9 +16,7 @@ install:
   - python setup.py install
   - pip install codecov
 script: 
-  - python -m pytest 
-  - py.test -v --cov
-  
+  - python -m pytest -v cov
 
 after_success:
   - codecov
