@@ -8,3 +8,5 @@ python:
 
 install:
   - pip install -e .
+script: 
+  - nosetests
