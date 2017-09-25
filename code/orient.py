@@ -15,9 +15,9 @@ import math
 
 from sys import argv
 #file_ref = np.loadtxt("ref.xyz",float)      #first file from command line
-file_ref = "../small.xyz"      #first file from command line
+file_ref = "small.xyz"      #first file from command line
 #file_2 = np.loadtxt("file2",float)       #second file from command line
-file_2 = "../small2.xyz"    #second file from command line
+file_2 = "small2.xyz"    #second file from command line
 
 def orientation(filename):             #function orientation will reorient the input file in a certain plane
 	file = open(filename)
